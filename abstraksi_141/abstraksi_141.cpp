@@ -1,29 +1,34 @@
-// noPewarisan_141.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// abstraksi_141.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
 using namespace std;
 
-class baseClass {
+class AbstraksiKlas {
+private: string x, y;
 public:
-    virtual void perkenalan() {
-        cout << "Hallo saya Function dari base class";
+     //method untuk mengisi nilai
+    //private member
+    void setXY(string a, string b) {
+        x = a;
+        y = b;
 
     }
-};
-
-class derivedClass : public baseClass {
-public:
-    void perkenalan() {
-        cout << "Hallo saya Function dari derived Class";
-
+    //menampilkan nilai
+    void display() {
+        cout << "x = " << x << endl;
+        cout << "y = " << y << endl;
     }
 };
 
 int main()
 {
-    derivedClass a;
-    a.perkenalan();
+    AbstraksiKlas ak;
+    ak.setXY("Yogyakarta", "Kampus");
+    ak.display();
+
+    return 0;
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
