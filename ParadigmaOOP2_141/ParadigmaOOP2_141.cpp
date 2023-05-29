@@ -25,7 +25,10 @@ public:
     }
 };
 
-
+class pelajar : public orang {
+public:
+    pelajar()
+};
 
 
 
