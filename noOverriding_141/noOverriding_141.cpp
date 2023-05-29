@@ -1,47 +1,23 @@
-// Polimorpi_141.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// noOverriding_141.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
 using namespace std;
 
-class seseorang {
+class baseClass {
 public:
-    virtual void pesan() = 0;
-    // virtual void pesan(){
-    //      cout <<"pesan dari seseorang"<<edl;
-    // }
-};
-
-class joko : public seseorang {
-public:
-    void pesan() {
-        cout << "Pesan dari Joko" << endl;
+    virtual void perkenalan() final {
+        cout << "Hallo saya function dari base class";
 
     }
 };
 
-class lia : public seseorang {
-public:
-    void pesan() {
-        cout << "Pesan dari Lia" << endl;
-    }
-};
 
 
 
 int main()
 {
-    seseorang* obyek;
-    joko a;
-    lia b;
-
-    obyek = &a;
-    obyek->pesan();
-    obyek = &b;
-    obyek->pesan();
-    // a.seseorang::pesan();
-
-    return 0;
+    std::cout << "Hello World!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
