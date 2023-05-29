@@ -1,33 +1,22 @@
-// noOverriding_141.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// noPewarisan_141.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
 using namespace std;
 
-class baseClass {
+class baseClass final {
 public:
     virtual void perkenalan() {
-
         cout << "Hallo saya Function dari base class";
 
     }
 };
 
-class derivedCLass : public baseClass {
-public:
-    void perkenalan() {
-        cout << "Hallo saya Function dari derived class";
-
-    }
-};
 
 
 int main()
 {
-    derivedCLass a;
-    a.perkenalan();
-
-    return 0;
+    std::cout << "Hello World!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
