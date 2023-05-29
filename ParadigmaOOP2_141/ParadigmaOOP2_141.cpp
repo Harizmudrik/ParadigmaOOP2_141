@@ -40,7 +40,7 @@ public:
         pekerja(pUmur),
         pelajar(pUmur)
     {
-        
+        cout << "Budi dibuat\n" << endl;
     }
 };
 
