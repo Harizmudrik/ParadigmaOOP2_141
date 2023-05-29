@@ -27,7 +27,11 @@ public:
 
 class pelajar : public orang {
 public:
-    pelajar()
+    pelajar(int pUmur) :
+        orang(pUmur)
+    {
+        cout << "pelajar dibuat\n" << endl;
+    }
 };
 
 
